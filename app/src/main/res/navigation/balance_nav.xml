@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/balance_nav"
+    app:startDestination="@id/previewBalanceFragment">
+
+    <fragment
+        android:id="@+id/previewBalanceFragment"
+        android:name="totenhund.com.kazanexpresstest.ui.balance.preview.PreviewBalanceFragment"
+        android:label="fragment_preview_balance"
+        tools:layout="@layout/fragment_preview_balance" >
+        <action
+            android:id="@+id/showMoreHistory"
+            app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/showMoreWallets"
+            app:destination="@id/walletFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="totenhund.com.kazanexpresstest.ui.balance.history.HistoryFragment"
+        android:label="HistoryFragment" />
+    <fragment
+        android:id="@+id/walletFragment"
+        android:name="totenhund.com.kazanexpresstest.ui.balance.wallet.WalletFragment"
+        android:label="WalletFragment" />
+</navigation>

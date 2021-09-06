@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primary_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="@dimen/iv_no_connection_width"
+        android:layout_height="@dimen/iv_no_connection_height"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ic_baseline_no_connection"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toTopOf="@id/tv_no_internet_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_no_internet_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_internet"
+        android:textColor="@color/text_header"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_try_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/check_internet_connection"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_no_internet_header" />
+
+    <ImageButton
+        android:id="@+id/btn_try_again"
+        android:layout_width="@dimen/btn_no_connection_try_again_width"
+        android:layout_height="@dimen/btn_no_connection_try_again_height"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_baseline_replay_24"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_try_again" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

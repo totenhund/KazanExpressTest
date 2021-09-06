@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">KazanExpressTest</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_wallet_header">Wallets</string>
+    <string name="fragment_preview_balance_show_all">More</string>
+    <string name="fragment_history_header">History</string>
+
+    <string name="incoming_money">You\'ve received payment</string>
+    <string name="outgoing_money" formatted="true">You\'ve cashed out to %1$s</string>
+    <string name="positive_operation_amount" formatted="true">%1$s %2$s</string>
+    <string name="negative_operation_amount" formatted="true">-%1$s %2$s</string>
+    <string name="check_internet_connection">Try again</string>
+    <string name="no_internet">No connection</string>
+
+</resources>

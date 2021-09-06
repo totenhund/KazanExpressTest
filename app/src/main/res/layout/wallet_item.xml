@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/wallet_item_padding">
+
+        <ImageView
+            android:id="@+id/iv_wallet_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/bank_logo"
+            android:layout_width="@dimen/icon_wallet_width"
+            android:layout_height="@dimen/icon_wallet_height"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/tv_card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/wallet_item_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_wallet_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="PHP" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="1,000.0" />
+
+        <View
+            android:layout_marginTop="@dimen/wallet_item_margin"
+            android:layout_marginStart="@dimen/wallet_item_margin"
+            android:layout_marginEnd="@dimen/wallet_item_margin"
+            android:id="@+id/wallet_divider"
+            app:layout_constraintTop_toBottomOf="@id/iv_wallet_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

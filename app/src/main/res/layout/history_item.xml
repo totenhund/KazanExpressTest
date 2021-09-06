@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/history_item_padding">
+
+        <ImageView
+            android:id="@+id/iv_operation_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/history_operation_logo"
+            android:layout_width="@dimen/history_item_icon_width"
+            android:layout_height="@dimen/history_item_icon_height"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/tv_operation_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/history_item_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_operation_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="You've cashed out to 7-11" />
+
+        <TextView
+            android:id="@+id/tv_spend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="- 1,000.0 USD" />
+
+        <View
+            android:id="@+id/history_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/history_item_margin"
+            android:layout_marginStart="@dimen/history_item_margin"
+            android:layout_marginEnd="@dimen/history_item_margin"
+            android:background="@color/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_operation_logo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

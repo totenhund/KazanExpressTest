@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- No connection layout   -->
+    <dimen name="iv_no_connection_width">100dp</dimen>
+    <dimen name="iv_no_connection_height">100dp</dimen>
+    <dimen name="btn_no_connection_try_again_width">50dp</dimen>
+    <dimen name="btn_no_connection_try_again_height">50dp</dimen>
+
+    <!-- Wallet item   -->
+    <dimen name="icon_wallet_width">30dp</dimen>
+    <dimen name="icon_wallet_height">30dp</dimen>
+    <dimen name="wallet_item_margin">10dp</dimen>
+    <dimen name="wallet_item_padding">20dp</dimen>
+    <dimen name="history_item_padding">20dp</dimen>
+
+    <!-- History item -->
+    <dimen name="history_item_icon_width">30dp</dimen>
+    <dimen name="history_item_icon_height">30dp</dimen>
+    <dimen name="history_item_margin">10dp</dimen>
+
+    <!-- Preview Balance Fragment -->
+    <dimen name="fragment_preview_card_elevation">5dp</dimen>
+    <dimen name="fragment_preview_card_radius">10dp</dimen>
+    <dimen name="fragment_preview_tv_header_margin">20dp</dimen>
+    <dimen name="fragment_preview_divider_top_margin">10dp</dimen>
+    <dimen name="fragment_preview_btn_show_more_margin">20dp</dimen>
+    <dimen name="fragment_preview_card_margin">10dp</dimen>
+    <dimen name="fragment_preview_card_top_margin">20dp</dimen>
+
+    <!-- History fragment-->
+    <dimen name="fragment_history_header_margin">20dp</dimen>
+    <dimen name="fragment_history_divider_margin">10dp</dimen>
+
+    <!-- Wallet fragment-->
+    <dimen name="fragment_wallet_header_margin">20dp</dimen>
+    <dimen name="fragment_wallet_divider_margin">10dp</dimen>
+
+</resources>
