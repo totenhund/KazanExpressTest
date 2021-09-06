@@ -8,11 +8,11 @@ Requests are implemented with Retrofit2 library
 
 ### Project structure 
 
-data/network - abstrack definition of data and API module
-domain/interactors - actions that user triggers (requests)
-repositories - interfaces that provide methods for accessing data
-ui - fragments with ViewModels
-util - base class extensions and data formatting
+1. data/network - abstrack definition of data and API module
+2. domain/interactors - actions that user triggers (requests)
+3. repositories - interfaces that provide methods for accessing data
+4. ui - fragments with ViewModels
+5. util - base class extensions and data formatting
 
 ### Installation
 
